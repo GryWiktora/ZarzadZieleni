@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Tomasz Wysocki">
+	<meta name="keywords" content="nasadzenia, zarząd zieleni, strona WWW">
+	<meta name="description" content="Strona poświęcona zasadzeniom w mieście Łodzi">
+	<link rel="stylesheet" href="CSS/style.css">
+	<title>Zarząd Zieleni</title>
+</head>
+<body>
+<div id="all">
+<div id ="conteiner">
+	<div id="logo">
+		<img src="images\logo.png" 
+		alt="logotyp zarządu zieleni miasta Łodzi"
+		width="200" height="50">
+	</div>
+	<div id="menu">
+	<ul>
+		<li><a class="active" href="index.html">Start</a></li>
+		<li><a href="kontakt.html">Galeria</a></li>
+		<li><a href="kontakt.html">Oferta</a></li>
+		<li><a href="kontakt.html">Mapa</a></li>
+		<li style="float:right"><a href="kontakt.html">Kontakt</a></li>
+	</ul>
+	</div>
+	<div id="banner">
+		<img src="images\banner.jpg" 
+		alt="na tym zdjęciu znajduje się park w mieście Łodzi"
+		width="1000" height="300">
+	<div>
+	
+	<div id="box">
+		<div id="fotka">
+		<img src="images\banner.jpg" 
+			alt="testowy"
+			width="100%">
+		</div>
+		<div id="text">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque, nibh eu pulvinar tincidunt, nisi dolor dictum nunc, nec ornare tortor neque sit amet libero. In in massa pharetra, sollicitudin justo in
+		</div>
+	</div>
+	<div id="box">
+	
+	</div>
+	<div id="box">
+	
+	</div>
+	<div id="box">
+	
+	</div>
+
+	<hr/>
+	<div id="content">
+	<br>
+	<a href="http:\\www.3lo.pl" target="_blank">Odnośnik do strony liceum</a>
+	<p>Aplikacja umożliwia</p>
+	
+		<p>dodawanie drzw i ulic do bazy</p>
+		<p>wyświetlanie listy ulic lub listy drzew</p>
+	
+	<hr/>
+	<h2>Dodawanie</h2>
+	<form action='dodaj_drzewo.php' method="POST">
+		Gatunek:
+		<input type="text" name="gatunek" maxlength="50">
+		Rodzaj:
+		<select name="rodzaj">
+			<option>lisciaste</option>
+			<option>iglaste</option>
+		</select>
+		<input type="submit" value="Zapisz">
+	</form>
+		<h3>Dodaj ulice:  </h3>
+	<form action='dodaj_ulice.php' method="POST">
+		Ulica:
+		<input type="text" name="ulica" maxlength="50">
+		<input type="submit" value="Zapisz">
+	</form>
+		<hr/>
+		<h2>Wyświetlanie</h2>
+		<h3>Wyświetl listę drzew lub ulic </h3>
+	<form action='wyswietl.php' method="POST">
+		Wybierz co chcesz wyswietlić: 
+		<select name="lista">
+			<option>drzewa</option>
+			<option>ulice</option>
+		</select>
+		<input type="submit" value="Wyswietl">	
+	</form>
+	
+	</div>
+	<div id ="footer">
+	Wszelkie prawa zastrzeżone dla Tomasz Wysocki Copyright© 2022
+	</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCKTYPE html>
+<head> 
+	<html lang = "pl">
+	<meta charset ="UTF-8">
+	<title> Zarząd Zieleni </title>
+</head>
+<body>
+<div id="conteiner">
+	<div id="logo">
+		<h1> Zarząd Zieleni </h1>
+	</div>
+	<div id="menu"v>
+		<ul>
+			<li><a href="index.html">Strona główna</a></li>
+			<li>O nas</li>
+			<li>Oferta</li>
+			<li>Galeria</li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</ul>
+	</div>	
+	
+	
+	
+	
+	<p>Aplikacja umożliwia</p>
+	<ul>
+		<li>dodawanie drzew i ulic do bazy</li>
+		<li>wyśietlenie listy ulic lub listy drzew</li>
+	</ul>
+	<hr/>
+	<h2>Dodawanie</h2>
+	<form action='dodaj_drzewo.php' method="POST">
+		Gatunek:
+		<input type="text" name="gatunek" maxlength="50"/>
+		Rodzaj:
+		<select name="rodzaj">
+			<option>liściaste</option>
+			<option>iglaste</option>
+		</select>
+		<input type="submit" value="Zapisz"/>
+	</form>
+	<h3>Dodaj ulice</h3>
+	<form action='dodaj_ulice.php' method="POST">
+		Ulica:
+		<input type="text" name="ulica" maxlength="50"/>
+		<input type="submit" value="Zapisz"/>
+	</form>
+	<hr/>
+	
+	<h2>Wyświetlenie</h2>
+	<h3>Wyświetl listę drzew lub ulic: </h3>
+	<form action="wyswietl.php" method="POST">
+	Wybierz co chcesz wyświetlić:
+		<select name="lista">
+			<option>drzewa</option>
+			<option>ulice</option>
+		</select>
+	<input type="submit" value="Wyświetl"/>
+	</form>
+<div>
+</body>
+
+<footer>
+
+</footer>
